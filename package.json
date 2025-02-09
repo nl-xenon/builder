@@ -1,0 +1,31 @@
+{
+  "name": "@xenons/builders",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "swc src -d dist --config-file=./.swcrc",
+    "build:project": "swc-node src/build.ts",
+    "dev": "swc-node src/index.ts",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "builders",
+    "fs",
+    "client",
+    "server",
+    "ssr",
+    "api",
+    "vue"
+  ],
+  "author": "Your Name or Organization",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/cli": "^0.1.50",
+    "@swc/core": "^1.3.33",
+    "rimraf": "^5.0.0",
+    "swc-node": "^1.0.0"
+  },
+  "dependencies": {
+    "@xenons/builders": "file:"
+  }
+}
